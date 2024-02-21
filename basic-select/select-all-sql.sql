@@ -1,0 +1,5 @@
+-- MySQL
+
+select
+    *
+from city
