@@ -6,6 +6,6 @@ where lat_n < 137.2345;
 
 -- MySQL, Oracle
 select
-    round(max(lat_n), 4) sum_lat
+    round(max(lat_n), 4) max_lat
 from station
 where lat_n < 137.2345;
