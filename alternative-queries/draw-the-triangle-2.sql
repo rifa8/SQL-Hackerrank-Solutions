@@ -22,8 +22,7 @@ END;
 /
 
 -- MS SQL Server
-DECLARE @r INT;
-SET @r = 1;
+DECLARE @r INT = 1;
 WHILE @r <= 20
 BEGIN
     PRINT REPLICATE('* ', @r);
