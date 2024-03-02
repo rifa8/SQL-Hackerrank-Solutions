@@ -10,21 +10,21 @@ select repeat('* ', stars) pattern
 from cte;
 
 -- Oracle
-SET SERVEROUTPUT ON;
-BEGIN
-    FOR I IN 1..20 LOOP
-        FOR J IN 1..I LOOP
-            DBMS_OUTPUT.PUT('* ');
-        END LOOP;
-        DBMS_OUTPUT.PUT_LINE('');
-    END LOOP;
-END;
+set serveroutput on;
+begin
+    for i in 1..20 loop
+        for j in 1..i loop
+            dbms_output.put('* ');
+        end loop;
+        dbms_output.put_line('');
+    end loop;
+end;
 /
 
 -- MS SQL Server
-DECLARE @r INT = 1;
-WHILE @r <= 20
-BEGIN
-    PRINT REPLICATE('* ', @r);
-    SET @r = @r + 1;
-END;
+declare @r int = 1;
+while @r <= 20
+begin
+    print replicate('* ', @r);
+    set @r = @r + 1;
+end;
